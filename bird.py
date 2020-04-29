@@ -87,7 +87,7 @@ class Bird:
 		return pygame.mask.from_surface(self.img)
 
 class Pipe:
-	GAP = random.randrange(100, 200)
+	GAP = random.randrange(130, 220)
 	VEL = 10
 
 	def __init__(self, x):
@@ -277,12 +277,7 @@ def run(config_path):
 	p.add_reporter(stats)
 
 	winner = p.run(main, 50)
-"""
-if __name__ == "__main__":
-	local_dir = os.path.dirname(__file__)
-	config.path = os.path.join(local_dir, "config-feedforward.txt")
-	run(config_path)
-"""
+
 if __name__ == "__main__":
     local_dir = os.path.dirname(__file__)
     config_path = os.path.join(local_dir, "config-feedforward.txt")
