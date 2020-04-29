@@ -256,7 +256,7 @@ def main(genomes, config):
 
 		
 		for x, bird in enumerate(birds):
-			if bird.y + bird.img.get_height() >= 730 or bird.y < 0:
+			if bird.y + bird.img.get_height() >= 729 or bird.y < 0:
 				birds.pop(x)
 				nets.pop(x)
 				ge.pop(x)
